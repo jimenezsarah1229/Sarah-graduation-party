@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah's Graduation Party</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HERO / INVITATION -->
+
+
+<section class="hero">
+
+<div class="card">
+
+<div class="decor-top">
+
+<img src="icons/hat.svg" class="hat">
+
+<img src="icons/horseshoe.svg" class="horseshoe">
+
+<img src="icons/boot.svg" class="boot">
+
+<img src="icons/cactus.svg" class="cactus">
+
+<img src="icons/star.svg" class="star1">
+
+<img src="icons/star.svg" class="star2">
+
+<img src="icons/star.svg" class="star3">
+
+</div>
+
+<h1>
+
+Sarah's
+
+<span>Graduation Party</span>
+
+</h1>
+
+<p class="subtitle">
+
+Join me to celebrate my graduation
+
+</p>
+
+<div class="divider"></div>
+
+<h2>
+
+September 26, 2026 • 3:30 PM
+
+</h2>
+
+<p class="address">
+
+8529 Albia St
+
+<br>
+
+Downey, CA 90242
+
+</p>
+
+<a href="#rsvp" class="button">
+
+RSVP
+
+</a>
+
+<p class="scroll">
+
+Scroll Down ↓
+
+</p>
+
+</div>
+
+</section>
+
+<!-- COUNTDOWN -->
+
+<section class="countdown">
+
+<h2>
+
+Countdown
+
+</h2>
+
+<div id="timer">
+
+<div class="time-box">
+
+<span id="days">00</span>
+
+<small>Days</small>
+
+</div>
+
+<div class="time-box">
+
+<span id="hours">00</span>
+
+<small>Hours</small>
+
+</div>
+
+<div class="time-box">
+
+<span id="minutes">00</span>
+
+<small>Minutes</small>
+
+</div>
+
+<div class="time-box">
+
+<span id="seconds">00</span>
+
+<small>Seconds</small>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery">
+
+<h2>
+
+Senior Photos
+
+</h2>
+
+<div class="gallery-grid">
+
+<img src="images/photo1.jpg">
+
+<img src="images/photo2.jpg">
+
+<img src="images/photo3.jpg">
+
+<img src="images/photo4.jpg">
+
+</div>
+
+</section>
+
+<!-- RSVP -->
+
+<section id="rsvp">
+
+<h2>
+
+RSVP
+
+</h2>
+
+<form action="https://formspree.io/f/xjgnpgzd" method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Email">
+
+<input
+type="attendance"
+name="attendance"
+placeholder="Attendance">
+
+
+<select name="attendance">
+
+<option value="Choose">
+Choose
+<option value="Joyfully Attending">
+Joyfully Attending
+</option>
+
+<option value="Sadly Can't Make It">
+Sadly Can't Make It
+</option>
+
+
+</select>
+
+<textarea
+name="message"
+placeholder="Leave Sarah a message"></textarea>
+
+<button type="submit">
+Send RSVP
+</button>
+
+</form>
+
+</section>
+<div id="thanks" style="display:none;">
+    <h2>Thank you!</h2>
+    <p>Your RSVP has been received.</p>
+    <p>I'm so excited to celebrate with you! 🤍</p>
+</div>
+
+<!-- DINNER -->
+
+<section class="dinner">
+
+<h2>
+
+Dinner
+
+</h2>
+
+<p>
+
+Dinner will be served.
+
+<br><br>
+
+Featuring homemade birria and more.
+
+</p>
+
+</section>
+
+<!-- GIFTS -->
+
+<section class="gift">
+
+<h2>
+
+Gift Information
+
+</h2>
+
+<p>
+
+Your presence is the greatest gift.
+
+If you'd like to bless me with a graduation gift,
+
+cash or gift cards are greatly appreciated as I begin my next adventure.
+
+</p>
+
+</section>
+
+<!-- MAP -->
+
+<section class="location">
+
+<h2>
+
+Location
+
+</h2>
+
+<iframe
+src="https://www.google.com/maps?q=8529+Albia+St+Downey+CA+90242&output=embed"
+loading="lazy">
+</iframe>
+
+</section>
+
+<!-- FAQ -->
+
+<section class="faq">
+
+<h2>
+
+Frequently Asked Questions
+
+</h2>
+
+<div class="faq-card">
+
+<h3>
+
+Dress Code
+
+</h3>
+
+<p>
+
+Western Chic • Dressy Casual
+
+</p>
+
+</div>
+
+<div class="faq-card">
+
+<h3>
+
+Parking
+
+</h3>
+
+<p>
+
+Street parking is available.
+
+</p>
+
+</div>
+
+<div class="faq-card">
+
+<h3>
+
+Can I bring guests?
+
+</h3>
+
+<p>
+
+Please RSVP with everyone attending.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+Made with 🤍 for Sarah's Graduation Party
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
