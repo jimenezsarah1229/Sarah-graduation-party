@@ -1,0 +1,879 @@
+/* =========================
+   SARAH'S GRADUATION WEBSITE
+   VERSION 2.0
+========================= */
+
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+.scroll-down{
+
+animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(8px);
+}
+
+}
+
+ body{
+
+background:#f8d4de;
+
+background-image:
+
+linear-gradient(
+90deg,
+rgba(255,255,255,.25) 50%,
+transparent 50%
+),
+
+linear-gradient(
+rgba(255,255,255,.25) 50%,
+transparent 50%
+);
+
+background-size:48px 48px;
+
+rgba(255,255,255,.95),
+rgba(255,251,245,.95)
+);
+
+}
+
+/* HERO */
+
+.hero{
+
+min-height:auto;
+
+padding:35px 18px 50px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.card{
+
+width:96%;
+max-width:760px;
+
+
+    background:#fffdf8;
+
+    border:10px solid #BE977C;
+
+    border-radius:45px;
+
+    padding:70px 45px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+/* Decorative top icons */
+
+.decor-top{
+    display:none;
+}
+
+.decor-top img{
+
+    width:70px;
+
+}
+
+/* Main Title */
+
+h1{
+
+font-family:'Parisienne',cursive;
+
+font-size:85px;
+
+color:#9a735c;
+
+line-height:1;
+
+margin-bottom:10px;
+
+}
+
+h1 span{
+
+display:block;
+
+font-size:58px;
+
+font-family:'Playfair Display',serif;
+
+letter-spacing:2px;
+
+}
+h1 span{
+
+    display:block;
+
+    font-family:'Playfair Display',serif;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:54px;
+
+    margin-top:12px;
+
+}
+
+/* Subtitle */
+
+.subtitle{
+
+font-size:32px;
+
+color:#e495b1;
+
+margin:25px 0;
+
+font-style:italic;
+
+}
+
+/* Divider */
+
+.divider{
+
+    width:140px;
+
+    height:2px;
+
+    background:#e9c8d3;
+
+    margin:30px auto;
+
+}
+
+/* Date */
+
+h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:42px;
+
+    color:#9f775f;
+
+    margin-bottom:20px;
+
+}
+
+/* Address */
+
+.address{
+
+    font-size:28px;
+
+    line-height:1.7;
+
+}
+
+/* RSVP Button */
+
+.button{
+
+display:inline-block;
+
+background:#efb4c2;
+
+color:white;
+
+padding:18px 20px;
+
+margin-top:25px;
+
+border-radius:20px;
+
+text-decoration:none;
+
+box-shadow:0 8px 18px rgba(0,0,0,.10);
+
+letter-spacing:1px;
+
+font-size:20px;
+
+font-weight:600;
+
+font-family:Montserrat,sans-serif;
+
+}
+
+.button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 20px rgba(0,0,0,.15);
+
+}
+
+/* Scroll */
+
+.scroll{
+
+    margin-top:35px;
+
+    font-size:20px;
+
+    color:#c2909f;
+
+}
+
+/* Sections */
+
+section{
+
+padding:70px 20px;
+
+}
+
+/* Countdown */
+
+.countdown{
+
+    text-align:center;
+
+}
+
+#timer{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:16px;
+
+}
+
+.time-box{
+
+padding:24px;
+
+}
+.time-box{
+
+background:white;
+
+border-radius:22px;
+
+padding:18px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.time-box span{
+
+    display:block;
+
+    font-size:56px;
+
+    font-weight:bold;
+
+    color:#9f775f;
+
+}
+
+.time-box small{
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+/* Gallery */
+
+.gallery{
+
+display:flex;
+
+overflow-x:auto;
+
+gap:16px;
+
+scroll-snap-type:x mandatory;
+
+padding-bottom:12px;
+
+}
+
+.gallery img{
+
+min-width:260px;
+
+scroll-snap-align:center;
+
+border-radius:22px;
+
+}
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+    margin-top:40px;
+
+}
+.gallery img{
+
+border-radius:22px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    display:block;
+
+    transition:.35s;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.10);
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* RSVP */
+
+#rsvp{
+
+    text-align:center;
+
+}
+
+form{
+
+    max-width:650px;
+
+    margin:40px auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+input,
+select,
+textarea,
+button{
+
+width:100%;
+
+font-size:17px;
+
+padding:18px;
+
+}
+
+textarea{
+
+    min-height:160px;
+
+}
+
+button{
+
+    background:#ebb0c1;
+
+    color:white;
+
+    border:none;
+
+    padding:8px;
+
+    border-radius:999px;
+
+    font-size:18px;
+
+    font-family:'Montserrat',sans-serif;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* Simple cards */
+
+.dinner,
+.gift,
+.location,
+.faq{
+
+    text-align:center;
+
+}
+
+.dinner p,
+.gift p{
+
+    max-width:700px;
+
+    margin:20px auto;
+
+    font-size:28px;
+
+    line-height:1.7;
+
+}
+
+/* Map */
+
+iframe{
+
+    width:100%;
+
+    max-width:900px;
+
+    height:420px;
+
+    border:none;
+
+    border-radius:25px;
+
+    margin-top:35px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.10);
+
+}
+
+/* FAQ */
+
+.faq-card{
+
+    background:white;
+
+    max-width:750px;
+
+    margin:20px auto;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    text-align:left;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+}
+
+.faq-card h3{
+
+    font-family:'Playfair Display',serif;
+
+    color:#9f775f;
+
+    margin-bottom:12px;
+
+}
+
+footer{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    font-size:18px;
+
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width:768px){
+
+.card{
+
+padding:65px 22px;
+
+}
+
+.hat{
+
+width:52px;
+left:20px;
+top:35px;
+
+}
+
+.horseshoe{
+
+width:42px;
+right:20px;
+top:40px;
+
+}
+
+.boot{
+
+width:48px;
+left:18px;
+bottom:40px;
+
+}
+
+.cactus{
+
+width:54px;
+right:18px;
+bottom:40px;
+
+}
+
+.star1,
+.star2,
+.star3{
+
+width:18px;
+
+}
+
+}
+
+h1{
+
+font-size:52px;
+
+}
+
+h1 span{
+
+font-size:32px;
+
+}
+
+.subtitle{
+
+font-size:22px;
+
+}
+
+h2{
+
+font-size:28px;
+
+}
+
+.address{
+
+font-size:20px;
+
+}
+
+.button{
+
+width:100%;
+
+max-width:300px;
+
+}
+
+}
+
+}
+
+.card{
+    position: relative;
+    width: min(96%, 760px);
+    margin: 30px auto;
+    padding: 80px 35px;
+    background: linear-gradient(#fffefb, #fffaf5);
+    border: 10px solid #bc987d;
+    border-radius: 55px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.12);
+    overflow: hidden;
+}
+
+h1{
+
+font-size:64px;
+
+}
+
+h1 span{
+
+font-size:34px;
+
+letter-spacing:2px;
+
+}
+
+.subtitle{
+
+font-size:24px;
+
+}
+
+h2{
+
+font-size:30px;
+
+}
+
+.address{
+
+font-size:22px;
+
+}
+
+.button{
+
+width:100%;
+
+max-width:320px;
+
+}
+
+#timer{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.time-box{
+
+padding:25px;
+
+}
+
+.time-box span{
+
+font-size:42px;
+
+}
+
+iframe{
+
+height:260px;
+
+border-radius:20px;
+
+}
+/* Fade animation */
+
+section{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:.8s ease;
+
+}
+
+section.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Sparkles */
+
+.sparkle{
+
+position:fixed;
+
+bottom:-20px;
+
+color:#e8a4bb;
+
+font-size:18px;
+
+pointer-events:none;
+
+animation:floatUp linear forwards;
+
+opacity:.45;
+
+z-index:1;
+
+}
+
+@keyframes floatUp{
+
+from{
+
+transform:translateY(0);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:.45;
+
+}
+
+to{
+
+transform:translateY(-110vh);
+
+opacity:0;
+
+}
+
+}
+
+/* Sticky RSVP */
+
+.sticky-rsvp{
+
+left:50%;
+
+right:auto;
+
+transform:translateX(-50%);
+
+bottom:18px;
+
+padding:15px 32px;
+
+}
+
+.sticky-rsvp:hover{
+
+transform:translateY(-3px);
+
+}
+.hat{
+position:absolute;
+top:70px;
+left:55px;
+width:75px;
+}
+
+.horseshoe{
+position:absolute;
+top:80px;
+right:60px;
+width:58px;
+}
+
+.boot{
+position:absolute;
+left:45px;
+bottom:95px;
+width:65px;
+}
+
+.cactus{
+position:absolute;
+right:40px;
+bottom:70px;
+width:70px;
+}
+
+.star1{
+position:absolute;
+top:110px;
+left:50%;
+width:24px;
+transform:translateX(-50%);
+}
+
+.star2{
+position:absolute;
+left:55px;
+bottom:220px;
+width:24px;
+}
+
+.star3{
+position:absolute;
+right:60px;
+bottom:180px;
+width:24px;
+}
+
+/* Confetti */
+
+.confetti{
+
+position:fixed;
+
+top:-30px;
+
+transition:4s linear;
+
+pointer-events:none;
+
+z-index:1000;
+
+}
+.hero{
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
